@@ -1,6 +1,7 @@
 {
     "require-dev": {
         "rector/rector": "^1.2",
-        "phpstan/phpstan": "^1.2"
+        "phpstan/phpstan": "^1.2",
+         "mglaman/phpstan-drupal": "^1"
     }
 }

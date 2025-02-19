@@ -22,9 +22,11 @@ return static function (RectorConfig $rectorConfig): void {
   $rectorConfig->skip([
     '*/upgrade_status/tests/modules/*',
     '*/node_modules/*',
+    '*/vendor/*',
   ]);
-   # $rectorConfig->phpstanConfig('/home/behzad/projects/UA/ua_foundation_blocks/phpstan.neon');
-   # $rectorConfig->rule(TypedPropertyFromStrictConstructorRector::class);
+
+  $rectorConfig->phpstanConfig(__DIR__ . '/phpstan.neon');
+  // $rectorConfig->rule(TypedPropertyFromStrictConstructorRector::class);
 
   /*$rectorConfig->paths([
     __DIR__ . '/src',

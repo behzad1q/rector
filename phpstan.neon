@@ -1,0 +1,18 @@
+parameters:
+    phpVersion: 80300
+    level: 1
+    reportUnmatchedIgnoredErrors: true
+    customRulesetUsed: true
+#    paths:
+#        - src
+#        - tests
+    excludePaths:
+        - vendor
+    bootstrapFiles:
+        - vendor/autoload.php
+    ignoreErrors:
+        # - '#Unsafe usage of new static\(\).#'
+
+includes:
+    - vendor/mglaman/phpstan-drupal/extension.neon
+    - vendor/phpstan/phpstan-deprecation-rules/rules.neon
